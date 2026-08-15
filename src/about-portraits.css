@@ -1,32 +1,44 @@
 .about-portraits {
-  padding: 0 0 clamp(76px, 10vw, 132px);
-  background: var(--brand-white);
+  background: var(--bg-black, #070403);
 }
 
-.about-portraits__grid {
-  display: grid;
-  grid-template-columns: 1.06fr 0.94fr;
-  gap: clamp(18px, 3.5vw, 46px);
-  align-items: end;
+.editorial-photo-section {
+  position: relative;
+  overflow: clip;
+  padding: clamp(4rem, 7vw, 7rem) clamp(1.25rem, 4vw, 4rem);
 }
 
-.about-portraits__image {
+.editorial-photo-shell {
+  display: flex;
+  width: 100%;
+  max-width: 1180px;
+  margin-inline: auto;
+  justify-content: center;
+}
+
+.editorial-photo-frame {
+  width: min(100%, 760px);
   margin: 0;
+  padding: clamp(6px, 0.8vw, 10px);
   overflow: hidden;
-  background: var(--brand-cream-warm);
-  box-shadow: var(--shadow-md);
+  background: #160b06;
+  border: 1px solid rgba(255, 98, 0, 0.35);
+  border-radius: 4px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.55), 0 0 42px rgba(255, 98, 0, 0.08);
 }
 
-.about-portraits__image--seated { aspect-ratio: 4 / 4.35; }
-.about-portraits__image--standing { aspect-ratio: 4 / 4.85; transform: translateY(52px); }
-.about-portraits__image img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.about-portraits__image--seated img { object-position: center 32%; }
-.about-portraits__image--standing img { object-position: center top; }
+.editorial-photo-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  /* Keep Glory's face and upper body in the editorial landscape crop. */
+  object-position: center 13%;
+}
 
 @media (max-width: 700px) {
-  .about-portraits { padding-bottom: 72px; }
-  .about-portraits__grid { grid-template-columns: 1fr 1fr; gap: 14px; }
-  .about-portraits__image--standing { transform: translateY(24px); }
-  .about-portraits__image--seated { aspect-ratio: 4 / 5; }
-  .about-portraits__image--standing { aspect-ratio: 4 / 5.35; }
+  .editorial-photo-section {
+    padding: 4rem 1.25rem;
+  }
 }

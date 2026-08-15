@@ -7,4 +7,5 @@ import './about-portraits.css'
 import './results.css'
 import './premium-polish.css'
 import './dark-theme.css'
+import './layout-system.css'
 createRoot(document.getElementById('root')).render(<BrowserRouter><App /></BrowserRouter>)
