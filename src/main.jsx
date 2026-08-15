@@ -6,4 +6,5 @@ import './styles.css'
 import './about-portraits.css'
 import './results.css'
 import './premium-polish.css'
+import './dark-theme.css'
 createRoot(document.getElementById('root')).render(<BrowserRouter><App /></BrowserRouter>)
