@@ -1,0 +1,32 @@
+.about-portraits {
+  padding: 0 0 clamp(76px, 10vw, 132px);
+  background: var(--brand-white);
+}
+
+.about-portraits__grid {
+  display: grid;
+  grid-template-columns: 1.06fr 0.94fr;
+  gap: clamp(18px, 3.5vw, 46px);
+  align-items: end;
+}
+
+.about-portraits__image {
+  margin: 0;
+  overflow: hidden;
+  background: var(--brand-cream-warm);
+  box-shadow: var(--shadow-md);
+}
+
+.about-portraits__image--seated { aspect-ratio: 4 / 4.35; }
+.about-portraits__image--standing { aspect-ratio: 4 / 4.85; transform: translateY(52px); }
+.about-portraits__image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.about-portraits__image--seated img { object-position: center 32%; }
+.about-portraits__image--standing img { object-position: center top; }
+
+@media (max-width: 700px) {
+  .about-portraits { padding-bottom: 72px; }
+  .about-portraits__grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .about-portraits__image--standing { transform: translateY(24px); }
+  .about-portraits__image--seated { aspect-ratio: 4 / 5; }
+  .about-portraits__image--standing { aspect-ratio: 4 / 5.35; }
+}
