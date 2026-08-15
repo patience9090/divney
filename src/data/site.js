@@ -10,4 +10,6 @@ export const pageMetadata = {
   '/testimonials': 'Results, Impact & Client Experiences | Glory Obinwokoye',
   '/credentials': 'Credentials & Professional Learning | Glory Obinwokoye',
   '/contact': 'Work With Glory | Deviny Active Minds',
+  '/privacy': 'Privacy | Deviny Active Minds',
+  '/terms': 'Terms of Use | Deviny Active Minds',
 }
