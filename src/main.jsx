@@ -5,4 +5,5 @@ import App from './App'
 import './styles.css'
 import './about-portraits.css'
 import './results.css'
+import './premium-polish.css'
 createRoot(document.getElementById('root')).render(<BrowserRouter><App /></BrowserRouter>)
