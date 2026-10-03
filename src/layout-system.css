@@ -11,10 +11,19 @@
 
 @media(max-width:800px){
 	.hero{padding-block:28px 42px!important}
-	.hero-grid{min-height:auto!important;gap:28px}
+	.hero-grid{min-height:auto!important;gap:32px}
 	.hero h1{font-size:clamp(2.2rem,9vw,3.1rem)!important}
 	.hero-copy p{font-size:1rem;line-height:1.58}
 	.statement h2.editorial-statement{font-size:clamp(2rem,8.5vw,3rem)!important;line-height:1.08}
+}
+
+@media(max-width:600px){
+	.hero-copy{width:100%;padding:0}
+	.portrait-wrap{width:100%;padding:0 8px}
+	.portrait{width:100%;max-width:none}
+	.identity-panel{right:8px;bottom:0;max-width:calc(100% - 16px)}
+	.authority-strip .shell{display:grid;grid-template-columns:1fr;gap:0;padding-block:14px}
+	.authority-strip span,.authority-strip span+span{display:block;padding:8px 0;border:0;font-size:.72rem;line-height:1.35}
 }
 
 /* The two editorial statements deliberately use the loaded DM Sans italic face. */
