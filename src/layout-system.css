@@ -3,6 +3,20 @@
 @media(max-width:900px){.site-container,.shell{width:min(100% - 40px,var(--site-width))}.section{padding-block:clamp(4rem,9vw,5.5rem)}.hero-grid,.split,.active-grid,.contact,.values,.results-hero__grid{gap:var(--content-gap-md)}}
 @media(max-width:600px){.site-container,.shell{width:min(100% - 40px,var(--site-width))}.section{padding-block:clamp(4rem,12vw,5.5rem)}.final{width:calc(100% - 40px);margin-block:4rem;padding:3.5rem 1.25rem}.final .actions{width:100%;flex-direction:column}.final .actions .btn{width:100%;justify-content:center}.footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}.footer-bottom{align-items:flex-start}.mobile-nav{max-height:calc(100vh - 78px);overflow:auto}}
 
+/* Keep the home page entry compact so the headline starts close to the navbar. */
+.hero{padding-block:clamp(32px,4.5vw,58px)!important}
+.hero-grid{min-height:min(680px,calc(100vh - 84px))!important}
+.hero h1{font-size:clamp(2.65rem,4.25vw,4.8rem)!important;line-height:1.02}
+.statement h2.editorial-statement{font-size:clamp(2.1rem,3vw,3.8rem)!important;line-height:1.06}
+
+@media(max-width:800px){
+	.hero{padding-block:28px 42px!important}
+	.hero-grid{min-height:auto!important;gap:28px}
+	.hero h1{font-size:clamp(2.2rem,9vw,3.1rem)!important}
+	.hero-copy p{font-size:1rem;line-height:1.58}
+	.statement h2.editorial-statement{font-size:clamp(2rem,8.5vw,3rem)!important;line-height:1.08}
+}
+
 /* The two editorial statements deliberately use the loaded DM Sans italic face. */
 .editorial-statement{font-family:"DM Sans",sans-serif!important;font-style:italic;font-weight:700}.statement h2.editorial-statement{font-size:clamp(2.35rem,3.5vw,4.5rem);line-height:1.05;letter-spacing:-.045em;max-width:1500px;width:100%;margin-inline:auto;overflow-wrap:break-word;color:#fff9f5}.statement h2.editorial-statement em{font-style:inherit}.visibility-gap__intro h2.editorial-statement{font-size:clamp(2.5rem,3.25vw,4.25rem);line-height:1.04;letter-spacing:-.045em;max-width:13ch;margin:0;color:#fff9f5}
 @media(max-width:768px){.statement h2.editorial-statement,.visibility-gap__intro h2.editorial-statement{line-height:1.06;letter-spacing:-.035em}}@media(max-width:420px){.statement h2.editorial-statement,.visibility-gap__intro h2.editorial-statement{font-size:clamp(2.15rem,10vw,2.5rem)}}
