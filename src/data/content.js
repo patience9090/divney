@@ -1,6 +1,7 @@
 ﻿import { BriefcaseBusiness, Compass, Lightbulb, MessagesSquare, Users, Globe2, BadgeCheck, Mail } from 'lucide-react'
 
 export const linkedIn = 'https://www.linkedin.com/in/glory-obinwokoye-%F0%9F%A6%84-45154418a/'
+export const gyeeConsulting = 'https://www.gyeeconsulting.com'
 // TODO: Replace with Glory's approved email.
 export const email = ''
 export const nav = [{label:'Home',to:'/'},{label:'About',to:'/about'},{label:'Services',to:'/services'},{label:'Results',to:'/results'},{label:'Credentials',to:'/credentials'},{label:'Contact',to:'/contact'}]
